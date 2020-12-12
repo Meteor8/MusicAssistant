@@ -17,7 +17,7 @@ function login() {
     ajax.withCredentials = true;
     //创建http请求，设置请求地址
     var timestamp = Date.parse(new Date());
-    ajax.open("get", "http://localhost:3000/login/" + u_type + "?"+t_type_url+"=" + u_name + "&password=" + u_pw + "&t=" + timestamp);
+    ajax.open("post", "http://localhost:3000/login/" + u_type + "?"+t_type_url+"=" + u_name + "&password=" + u_pw + "&t=" + timestamp);
     //发送请求 (get为null post为参数)
     ajax.send(null);
     //给ajax设置事件

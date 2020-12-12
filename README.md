@@ -24,7 +24,7 @@
 
 2.具体使用方法见视频
 
-演示视频地址：
+演示视频地址：https://www.bilibili.com/video/BV1dA411W72Z/
 
 ## 3.注意事项
 
