@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.loginWindow{
+    display: block;
+    float:left;
+    position:absolute;
+    height: 180px;
+    width: 320px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+    z-index: 10000;
+
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -90px;
+
+    justify-content:center;
+    text-align: center;
+}
+
+.loginWindow .title{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+
+    width: 100%;
+    line-height:32px;
+    height: 32px;
+
+    background: rgb(109,112,117);
+    opacity:1;
+    animation: light 4s linear infinite;
+}
+@keyframes light{
+	0%{opacity:1;}
+	50%{opacity:0.5;}
+	100%{opacity:1;}
+}
+
+input[type="text"], input[type="password"]{
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background: none;
+    padding: 10px;
+    outline:none;
+
+    margin-top: 10px;
+}
+
+.loginbut{
+    margin-top: 15px;
+    height: 26px;
+    width: 60px;
+    border: 0px;
+    background-color: rgb(109,112,117);
+    outline: none;
+
+    font-weight: bold;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align: center;
+}
+.message{
+    background:rgba(189, 195, 199, 1);
+    width: 100%;
+    font-size:2vh;
+    line-height: 5vh;
+    height: 5vh;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.action{
+    width:100vw;
+}
+
+.login{
+    float:right;
+    width:20vw;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space:nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+.login::-webkit-scrollbar{
+    display: none; 
+}
+
+.title{
+    background:rgba(74, 77, 85, 0.5);
+    width: 100%;
+    font-size:2vh;
+    line-height: 5vh;
+    height: 5vh;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.title div{
+    width: 100%;
+}
+
+
+
+.content{
+    width: 100%;
+    height: 90vh;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.playlist{
+    background:rgb(218, 223, 225);
+    width: 33vw;
+    height: 90vh;
+
+    display:block;
+    flex-direction:column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+.playlist div[sel="1"]{
+    background: rgb(173, 174, 177);
+}
+.songlist{
+    background:rgb(189, 195, 199);
+    width: 34vw;
+    height: 90vh;
+
+    /* 注意display为block，如果是flex会导致插入的div改变大小 */
+    display:block;
+    flex-direction:column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.playlist div, .songlist div{
+    width: 100%;
+    height: 25px;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space:nowrap;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+.playlist div::-webkit-scrollbar, .songlist div::-webkit-scrollbar{
+    display: none; 
+}
+
+.songlist div[sel="1"]{
+    background: rgb(218, 220, 225);
+}
+
+.songinfo{
+    background:rgb(242, 241, 239);
+    width: 33vw;
+    height: 90vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.songdesc{
+    background:rgba(104, 107, 116, 0.5);
+    width: 100%;
+    height: 12vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space:nowrap;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+.songdesc::-webkit-scrollbar{
+    display: none; 
+}
+
+.playsong{
+    background:rgba(104, 107, 116, 0.5);
+    width: 100%;
+    height: 15vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+    overflow: hidden;
+}
+.wheresub{
+    background:rgba(104, 107, 116, 0.5);
+    width: 100%;
+    height: 63vh;
+
+    display:block;
+    flex-direction:column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.where div{
+    width: 100%;
+    height: 25px;
+    /* font-size:1.8vh; */
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space:nowrap;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+.wheresub div::-webkit-scrollbar{
+    display: none; 
+}
+
+.wheresub div[sub="1"]{
+    background:rgba(229, 231, 238, 0.5);
+}

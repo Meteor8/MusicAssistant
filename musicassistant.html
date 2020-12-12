@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <script src="changesonginfo.js"></script>
+    <script src="getsonginfo.js"></script>
+    <script src="getsonglist.js"></script>
+    <script src="getlist.js"></script>
+    <script src="login.js"></script>
+    <script src="scroll.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Meteora的MusicPlayer</title>
+</head>
+<body>
+    <div class="loginWindow">
+        <div class="title">@Meteora</div>
+        <input type="text" name="account" placeholder="Account"></input>
+        <input type="password" name="password" placeholder="Password"></input>
+        <input type="button" class="loginbut" value="登录" onclick="login()"></input>
+    </div>
+    <div class="container">
+        <div class="message">
+            <div class="action">
+                Welcome
+            </div>
+            <!-- <div class="login" onclick="login_status()">
+                Login
+            </div> -->
+        </div>
+        <div class="title">
+            <div class="playlistTitle" onclick="scroll2('playlist')">全部歌单</div>
+            <div class="songlistTitle" onclick="scroll2('songlist')">歌单歌曲</div>
+            <div class="songinfoTitle" onclick="scroll2('wheresub')">歌曲信息</div>
+        </div>
+        <div class="content">
+            <div class="playlist"></div>
+            <div class="songlist"></div>
+            <div class="songinfo">
+                <div class="songdesc">
+                    <div class="songname"></div>
+                    <div class="artist"></div>
+                    <div class="album"></div>
+                </div>
+                <div class="playsong">
+                    <iframe frameborder="no" border="0" height="100%" marginwidth="0" marginheight="0" src="//music.163.com/outchain/player?type=2&amp;id=31838827&amp;auto=0&amp;height=66"></iframe>
+                </div>
+                <div class="wheresub"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
